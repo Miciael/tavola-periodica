@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tavola Periodica 3D Futuristica</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+        "@tweenjs/tween.js": "https://unpkg.com/@tweenjs/tween.js@23.1.0/dist/tween.esm.js"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Contenitore 3D -->
+  <div id="container"></div>
+
+  <!-- Menu dei pulsanti per cambiare forma -->
+  <div id="menu">
+    <button id="table">Tavola</button>
+    <button id="sphere">Sfera</button>
+    <button id="helix">Elica</button>
+    <button id="grid">Griglia</button>
+  </div>
+
+  <!-- Modal / Pop-up con pulsante X per chiudere -->
+  <div id="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-modal">&times;</span>
+      <div id="modal-symbol">H</div>
+      <div id="modal-title">Idrogeno</div>
+      <div id="modal-details">N° Atomico: 1 | Peso Atomico: 1.008</div>
+      <div id="modal-desc">L'idrogeno è il primo elemento della tavola periodica...</div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
